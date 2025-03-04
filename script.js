@@ -553,7 +553,7 @@ document.getElementById('signupModal').addEventListener('click', (e) => {
 // Initialize Google Sign-In
 function initializeGoogleSignIn() {
     google.accounts.id.initialize({
-        client_id: 'YOUR_GOOGLE_CLIENT_ID', // Replace with your actual client ID
+        client_id: '49454316035-onk6lpd4vr9570b6kk8p7iijtarkf4bj.apps.googleusercontent.com', // Replace with your actual client ID
         callback: handleGoogleSignInCallback,
         auto_select: false,
         cancel_on_tap_outside: true
