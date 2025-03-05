@@ -5,7 +5,7 @@ const options = {
     currency: 'INR',
     name: 'TrendsPulse',
     description: 'Lifetime Access',
-    image: 'images/2025030122275204.png', // Your logo
+    image: '/trends-ai/images/2025030122275204.png', // Your logo
     handler: function(response) {
         // Handle successful payment
         handlePaymentSuccess(response);
