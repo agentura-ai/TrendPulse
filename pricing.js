@@ -1,7 +1,7 @@
 // Razorpay configuration
 const options = {
     key: 'rzp_live_qBnxFH7Aqj8mEw', // Replace with your Razorpay Key ID
-    amount: 1000, // Amount in paise (₹10 * 100)
+    amount: 100, // Amount in paise (₹1 * 100)
     currency: 'INR',
     name: 'TrendsPulse',
     description: 'Lifetime Access',
