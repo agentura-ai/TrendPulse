@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the latest trends across various topics with TrendsPulse. Get real-time updates on technology, medical, geopolitics, and more.">
+    <title>TrendsPulse - Real-time Trend Discovery</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Add Google Sign-In -->
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <img src="./images/2025030122275204.png" alt="TrendsPulse Logo" class="logo-img">
+                <span class="logo-text">Agentura</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="user-info">
+                <span id="userEmail"></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="header-section">
+            <h1>TrendsPulse</h1>
+            <p class="powered-by">Discover Tomorrow's Trends Today</p>
+        </div>
+
+        <div class="main-content">
+            <div class="search-section">
+                <div class="search-container">
+                    <input type="text" id="topicInput" placeholder="Enter a topic (Tech, Medical, Geopolitics, Sports etc.)">
+                    <button onclick="getTrends()">Search Trends</button>
+                </div>
+            </div>
+
+            <div class="content-wrapper">
+                <div class="results-section">
+                    <div id="results" class="results-container">
+                        <!-- Results will be displayed here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-content">
+                <p>© 2025 Agentura. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="privacy.html">Privacy Policy</a> |
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Remove EmailJS and add Google Sign-In initialization -->
+    <script>
+        // Initialize Google Sign-In when the page loads
+        window.onload = function() {
+            initializeGoogleSignIn();
+        };
+    </script>
+    <script src="script.js"></script>
+</body>
+</html> 
